@@ -14,14 +14,14 @@ add_test(
     COMMAND sh -c "${PROJECT_SOURCE_DIR}/test.sh $<TARGET_FILE:sort> ${TEST_DATA}"
     )
 add_test(
-    NAME sort-unique
+    NAME sort_f
     COMMAND sh -c "${PROJECT_SOURCE_DIR}/test-f.sh $<TARGET_FILE:sort> ${TEST_DATA}"
     )
 add_test(
-    NAME sort-reverse
+    NAME sort_n
     COMMAND sh -c "${PROJECT_SOURCE_DIR}/test-n.sh $<TARGET_FILE:sort> ${TEST_DATA}"
     )
 add_test(
-    NAME sort-unique-reverse
+    NAME sort_nf
     COMMAND sh -c "${PROJECT_SOURCE_DIR}/test-nf.sh $<TARGET_FILE:sort> ${TEST_DATA}"
     )
