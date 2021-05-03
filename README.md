@@ -16,7 +16,7 @@ sort [OPTION] [FILE]
 
 options:
 * `-f, --ignore-case` - fold lower case to upper case characters, that is, perform case-independent sorting.
-* `-n, --numeric-sort` - compare according to string numerical value. Strings are supposed to have optional blanks in the beginning, an optional minus sign, zero or more digits. Zero digits case should be treated as a zero value.
+* `-n, --numeric-sort` - compare according to string numerical value. Strings are supposed to have optional blanks in the beginning, an optional minus sign, zero or more digits. Zero digits case should be treated as a zero value. If compared strings have the same numeric value, compare them as full strings (as read from input) lexicographically (in that case `-f` option has no effect).
 
 ### Example
 ```bash
